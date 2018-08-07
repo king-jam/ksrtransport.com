@@ -1,2 +1,4 @@
 install: true
 script: exit 0
+after_success:
+- find . -name '.git*' -prune -o -type f -exec curl -u ${FTP_USER}:${FTP_PASSWORD} --ftp-create-dirs -T {} ${FTP_URL}/{} \;
