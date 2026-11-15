@@ -4,15 +4,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="KSR Transport - Professional transportation services in Hull, MA. Contact us at 781-925-2853 for reliable transport solutions.">
+    <meta name="author" content="KSR Transport">
     <title>KSR Transport</title>
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+          crossorigin="anonymous">
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
     <!-- Fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -29,7 +36,7 @@
         <div class="row">
             <div class="box">
                 <div class="col-lg-12 text-center">
-                    <img class="img-responsive img-full" src="img/sitepic.jpg" alt="">
+                    <img class="img-responsive img-full" src="img/sitepic.jpg" alt="KSR Transport company photo">
                     <h2 class="brand-before">
                         <small>Welcome to</small>
                     </h2>
@@ -52,7 +59,7 @@
                     </p>
                     <p>
                             Phone: <strong>781-925-2853</strong> <br/>
-                            Email: <strong><a href="mailto:jayking%40ksrtransport.com">jayking@ksrtransport.com</a></strong> <br/>
+                            Email: <strong><a href="#" id="contact-email">Contact via Email</a></strong> <br/>
                     </p>
                 </div>
                 <div class="clearfix"></div>
@@ -70,17 +77,25 @@
     </footer>
 
     <!-- jQuery -->
-    <script
-    			  src="https://code.jquery.com/jquery-1.11.1.min.js"
-    			  integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE="
-    			  crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+            crossorigin="anonymous"></script>
+    
+    <!-- Email obfuscation -->
+    <script>
+        document.getElementById('contact-email').href = 'mailto:' + 'jayking' + '@' + 'ksrtransport.com';
+        document.getElementById('contact-email').textContent = 'jayking' + '@' + 'ksrtransport.com';
+    </script>
+    
     <script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
+      "@context" : "https://schema.org",
       "@type" : "Organization",
       "name" : "KSR Transport",
-      "url" : "http:\/\/ksrtransport.com",
+      "url" : "https://ksrtransport.com",
       "contactPoint" : [{
         "@type" : "ContactPoint",
         "telephone" : "781-925-2853",
